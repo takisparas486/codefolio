@@ -1,13 +1,8 @@
 {
   "id": 4,
-  "title": "Codefolio",
-  "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, blanditiis! Ut nemo minus illo. Perferendis non adipisci harum voluptatem quam accusantium totam iure aperiam quasi. Perferendis odit ullam hic sed!",
-  "image": "codefolio.jpeg",
-  "links": {
-    "liveDemo": "#",
-    "videoDemo": "#",
-    "sourceCode": "#"
-  },
+  "title": "SportMate",
+  "description": "These website provide a platform for athletes to connect with each other and form teams for various sports, including soccer, basketball, volleyball, and more. Users can create profiles, search for teams or players based on their location, skill level, and preferred sport. ",
+  "image": "footballSite.png",
   "technologies": [
     "HTML",
     "CSS",

@@ -6,14 +6,6 @@
         alt="test image"
         class="img-fluid"
       />
-      <div v-if="technologies" class="project__technologies">
-        <span
-          v-for="(tech, i) in technologies"
-          :key="tech + i"
-          class="project__technology"
-          >{{ tech }}</span
-        >
-      </div>
     </div>
     <div class="project__details">
       <div class="project__title">
@@ -32,16 +24,6 @@
           title="Live Demo"
           >Demo
           <Icon name="globe" class="ms-1" />
-        </Button>
-        <Button
-          v-if="links.sourceCode"
-          class=""
-          :link="links.sourceCode"
-          small
-          github
-          title="Source Code"
-          >Source
-          <Icon name="github" class="ms-1" />
         </Button>
         <Button
           v-if="links.videoDemo"

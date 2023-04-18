@@ -1,13 +1,8 @@
 {
   "id": 3,
-  "title": "Wordsery",
-  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nobis, doloremque soluta tempora nisi laudantium quam. A error odio facere laudantium nam delectus mollitia expedita voluptas porro, at officiis culpa!.",
-  "image": "https://source.unsplash.com/random/1920x1080",
-  "links": {
-    "liveDemo": "#",
-    "videoDemo": "#",
-    "sourceCode": "#"
-  },
+  "title": "Dogzy",
+  "description": " Our site is dedicated to providing you with all the information you need to take great care of your furry friend",
+  "image": "dog.png",
   "technologies": [
     "HTML",
     "css",

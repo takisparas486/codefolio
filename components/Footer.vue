@@ -1,11 +1,4 @@
-<template>
-  <div class="footer">
-    <a class="footer__link" href="https://github.com/0xAliRaza/codefolio"
-      >Codefolio</a
-    >, coded with <Icon name="heart" /> by
-    <a class="footer__link" href="https://0xali.com">Ali Raza.</a>
-  </div>
-</template>
+<template></template>
 
 <style lang="scss" scoped>
 @import '@/scss/abstracts';

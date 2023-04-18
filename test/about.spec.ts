@@ -12,7 +12,10 @@ describe('about', () => {
             icons: [
               { name: 'discord', url: '#' },
               { name: 'twitter', url: '#' },
-              { name: 'facebook', url: '#' },
+              {
+                name: 'facebook',
+                url: 'https://www.facebook.com/takis.paras.7',
+              },
             ],
           },
         }

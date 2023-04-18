@@ -1,8 +1,8 @@
 {
-  "id": 1,
-  "title": "Lexicon",
-  "description": "Website for Hellenic Army use",
-  "image": "lexicon.png",
+  "id": 5,
+  "title": "Ebay",
+  "description": "Ebay using Wordpress",
+  "image": "ebay1.png",
   "technologies": [
     "HTML",
     "CSS",

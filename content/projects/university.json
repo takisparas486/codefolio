@@ -1,0 +1,16 @@
+{
+  "id": 6,
+  "title": "Feeding application management system",
+  "description": "The Feeding Application Management System is a web-based platform designed to streamline the management of feeding applications. This application assists organizations in managing and coordinating feeding programs, such as food banks, meal programs, and other similar initiatives. ",
+  "image": "university.png",
+  "technologies": [
+    "HTML",
+    "CSS",
+    "SCSS",
+    "JavaScript",
+    "VUEJS",
+    "Django",
+    "Git",
+    "Docker"
+  ]
+}

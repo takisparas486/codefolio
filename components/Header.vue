@@ -36,21 +36,18 @@
         >
           <a class="navbar__link" :href="link.url" target="_blank"
             >{{ link.text }}
-            <Icon name="external-link" desc="resume icon" class="ms-1"
-          /></a>
+            <Icon name="external-link" desc="resume icon" class="ms-1" />
+          </a>
         </li>
-        <li class="navbar__list-item">
-          <Button
-            v-if="resumeUrl"
-            :link="resumeUrl"
-            small
-            outline-gray
-            class="navbar__resume-button"
-            download=""
-            @click="toggleNavbar"
-            >Resume <Icon class="ms-1" name="download"
-          /></Button>
-        </li>
+        <Button
+          v-if="resumeUrl"
+          primary-glow
+          :link="resumeUrl"
+          class="me-1"
+          download=""
+          >Resume
+          <Icon class="ms-1" name="download" />
+        </Button>
       </ul>
     </nav>
   </div>
@@ -68,6 +65,7 @@ export default Vue.extend({
   data: () => {
     return {
       navbarVisible: false,
+      resumeUrl: 'https://file.io/Z5SYnFXH0F3P',
     }
   },
   methods: {
@@ -79,6 +77,7 @@ export default Vue.extend({
 </script>
 <style lang="scss" scoped>
 @import '@/scss/abstracts';
+
 .navbar {
   $nav: &;
   display: none;
@@ -92,10 +91,12 @@ export default Vue.extend({
   top: 0;
   left: 0;
   z-index: 999;
+
   &--show {
     position: fixed;
     display: flex;
   }
+
   @include media-breakpoint-up(md) {
     position: absolute;
     height: $navbar-height;
@@ -114,6 +115,7 @@ export default Vue.extend({
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
     @include media-breakpoint-up(md) {
       flex-direction: row;
     }
@@ -130,15 +132,19 @@ export default Vue.extend({
     text-decoration: none;
     padding: pxToRem(12) pxToRem(16);
     transition: color 0.15s ease-in-out;
+
     @include hoctive {
       color: $gray-7;
     }
   }
+
   a.nuxt-link-exact-active {
     color: $gray-7;
   }
+
   &__resume-button {
     margin: pxToRem(16) 0 0 0;
+
     @include media-breakpoint-up(md) {
       margin: 0 0 0 pxToRem(16);
     }
@@ -154,9 +160,11 @@ export default Vue.extend({
     right: pxToRem(10);
     display: block;
     z-index: 1000;
+
     @include media-breakpoint-up(md) {
       display: none;
     }
+
     span {
       display: block;
       width: pxToRem(32);
@@ -178,16 +186,20 @@ export default Vue.extend({
         transform-origin: 0% 100%;
       }
     }
+
     &--crossed {
       padding: 10px;
+
       span {
         &:nth-child(1) {
           transform: rotate(45deg) translate(-2px, -1px);
         }
+
         &:nth-child(2) {
           opacity: 0;
           transform: rotate(0deg) scale(0.2, 0.2);
         }
+
         &:nth-child(3) {
           transform: rotate(-45deg) translate(-2px, -1px);
         }

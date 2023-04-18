@@ -1,28 +1,12 @@
 {
   "icons": [
     {
-      "name": "discord",
-      "url": "#"
-    },
-    {
       "name": "facebook",
-      "url": "#"
+      "url": "https://www.facebook.com/takis.paras.7"
     },
     {
-      "name": "github",
-      "url": "#"
-    },
-    {
-      "name": "twitter",
-      "url": "#"
-    },
-    {
-      "name": "gmail",
-      "url": "#"
-    },
-    {
-      "name": "skype",
-      "url": "#"
+      "name": "linkedIn",
+      "url": "https://www.linkedin.com/in/takis-paraskeuopoulos-670980196/"
     }
   ]
 }

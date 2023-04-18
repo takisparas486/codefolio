@@ -36,13 +36,14 @@
                 "
               >
                 <Button
-                  v-if="navbar.resumeUrl"
+                  v-if="resumeUrl"
                   primary-glow
-                  :link="navbar.resumeUrl"
+                  :link="resumeUrl"
                   class="me-1"
                   download=""
-                  >Resume <Icon class="ms-1" name="download"
-                /></Button>
+                  >Resume
+                  <Icon class="ms-1" name="download" />
+                </Button>
                 <Button outline-primary nuxt-link="/contact">Contact</Button>
               </div>
             </section>
@@ -58,6 +59,11 @@
 import Vue from 'vue'
 
 export default Vue.extend({
+  data() {
+    return {
+      resumeUrl: 'https://file.io/Z5SYnFXH0F3P',
+    }
+  },
   async asyncData({ $content }) {
     const about = await $content('about').fetch()
     const navbar = await $content('navbar').fetch()
@@ -71,10 +77,16 @@ export default Vue.extend({
   head: {
     title: 'About - Codefolio',
   },
+  methods: {
+    downloadResume() {
+      window.open(this.resumeUrl, '_blank')
+    },
+  },
 })
 </script>
 <style lang="scss" scoped>
 @import '@/scss/abstracts';
+
 .about {
   padding: pxToRem(10) 0;
 
@@ -87,17 +99,20 @@ export default Vue.extend({
     padding: pxToRem(20);
     z-index: 200;
   }
+
   &__link {
     backface-visibility: hidden;
     transform: translateZ(0);
     display: inline-flex;
     color: $gray-7;
     transition: all 0.2s ease;
+
     @include hoctive {
       transform: scale(1.2);
       color: $gray-8;
     }
   }
+
   &__icon {
     width: 2em !important;
     height: 2em !important;
